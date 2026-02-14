@@ -1,0 +1,6 @@
+no for loop allowed
+no explicit return
+missing invariants
+missing variants
+missing pre-condition
+missing post-condition

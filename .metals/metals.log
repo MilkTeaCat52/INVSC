@@ -1,0 +1,11 @@
+2026.02.14 22:42:03 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.14 22:42:05 INFO  Running List(/Users/zhanqiwang/Library/Application Support/Coursier/bin/scala-cli, setup-ide, /Users/zhanqiwang/Documents/code/Hackathon/Invcc)
+2026.02.14 22:42:05 INFO  Attempting to connect to the build server...
+2026.02.14 22:42:05 INFO  Running BSP server List(/Users/zhanqiwang/Library/Application Support/Coursier/bin/.scala-cli.aux, bsp, --json-options, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-options-v2.json, --json-launcher-options, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-launcher-options.json, --envs-file, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-envs.json, /Users/zhanqiwang/Documents/code/Hackathon/Invcc)
+2026.02.14 22:42:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.metals/bsp.trace.json or /Users/zhanqiwang/Library/Caches/org.scalameta.metals/bsp.trace.json
+2026.02.14 22:42:05 INFO  time: Connected to build server in 0.48s
+2026.02.14 22:42:06 INFO  Connected to Build server: scala-cli v1.10.1
+2026.02.14 22:42:05 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.14 22:42:06 INFO  time: compiled Invcc_d5c0a6989e in 0.54s
+2026.02.14 22:42:07 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.14 22:42:07 INFO  time: indexed workspace in 1.99s

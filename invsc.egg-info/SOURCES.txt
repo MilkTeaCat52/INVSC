@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+invsc/__init__.py
+invsc/__main__.py
+invsc/actions.py
+invsc/cli.py
+invsc/compiler.py
+invsc/config.py
+invsc/formatter.py
+invsc/gpt_client.py
+invsc/prompt.txt
+invsc.egg-info/PKG-INFO
+invsc.egg-info/SOURCES.txt
+invsc.egg-info/dependency_links.txt
+invsc.egg-info/entry_points.txt
+invsc.egg-info/requires.txt
+invsc.egg-info/top_level.txt
