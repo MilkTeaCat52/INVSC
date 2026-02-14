@@ -23,13 +23,29 @@ GRADE_MESSAGES = {
         "🎓 Grade: α (Alpha) — First Class Honours",
         "Your tutor would be proud. Compilation successful.",
     ],
-    "alpha-beta": [
+    "alpha(-)": [
+        "🎓 Grade: α⁻ (Alpha Minus) — First Class Honours (minor blemish)",
+        "Nearly flawless. One could quibble, but one shan't. Compilation successful.",
+    ],
+    "alphabeta": [
         "📝 Grade: αβ (Alpha-Beta) — Upper Second",
         "Acceptable, though one expected better. Compilation successful.",
+    ],
+    "betaalpha": [
+        "📋 Grade: βα (Beta-Alpha) — Upper Second (lower end)",
+        "Showing promise, but not enough. COMPILATION REFUSED.",
     ],
     "beta": [
         "😤 Grade: β (Beta) — Lower Second",
         "This is beneath you. COMPILATION REFUSED.",
+    ],
+    "betagamma": [
+        "😡 Grade: βγ (Beta-Gamma) — Lower Second (barely)",
+        "Your tutor is composing a strongly worded letter. COMPILATION REFUSED.",
+    ],
+    "gammabeta": [
+        "💀 Grade: γβ (Gamma-Beta) — Third Class (upper end)",
+        "Were you even trying? COMPILATION VIOLENTLY REFUSED.",
     ],
     "gamma": [
         "💀 Grade: γ (Gamma) — Third Class",

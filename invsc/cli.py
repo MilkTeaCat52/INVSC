@@ -58,6 +58,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Force compilation even if grade is below alpha-beta (live dangerously)",
     )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Show GPT's detailed analysis (chain-of-thought reasoning)",
+    )
 
     return parser.parse_args()
 
@@ -108,6 +113,15 @@ def main():
         print(json.dumps(result, indent=2))
         exit_code = 0 if result["grade"] in PASSING_GRADES else 1
     else:
+        # Show verbose analysis if requested
+        if args.verbose and "analysis" in result:
+            print(f"{c['info']}{'─' * 60}{c['reset']}")
+            print(f"{c['bold']}GPT Analysis (chain-of-thought):{c['reset']}")
+            print(f"{c['info']}{'─' * 60}{c['reset']}")
+            print(result["analysis"])
+            print(f"{c['info']}{'─' * 60}{c['reset']}")
+            print()
+
         exit_code = format_full_output(result, args.source)
 
     # Grade actions

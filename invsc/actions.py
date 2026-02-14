@@ -27,10 +27,27 @@ def action_alpha():
     _try_say("Congratulations. First class honours. The examiners are satisfied.")
 
 
-def action_alpha_beta():
-    """Mild approval for alpha-beta."""
+def action_alpha_minus():
+    """Near-perfect, trivial nitpicks."""
     c = COLORS
-    print(f"{c['alpha-beta']}{c['bold']}")
+    print(f"{c['alpha(-)']}{c['bold']}")
+    print("  ╔══════════════════════════════════════════════════╗")
+    print("  ║                                                  ║")
+    print("  ║   🎓  ALPHA MINUS — FIRST CLASS (near miss)  🎓 ║")
+    print("  ║                                                  ║")
+    print("  ║   The Examination Schools are nearly pleased.    ║")
+    print("  ║   A minor blemish on an otherwise fine effort.   ║")
+    print("  ║                                                  ║")
+    print("  ╚══════════════════════════════════════════════════╝")
+    print(f"{c['reset']}")
+
+    _try_say("Alpha minus. Nearly flawless. One could quibble, but one shan't.")
+
+
+def action_alphabeta():
+    """Mild approval for alphabeta."""
+    c = COLORS
+    print(f"{c['alphabeta']}{c['bold']}")
     print("  ┌──────────────────────────────────────────────────┐")
     print("  │                                                  │")
     print("  │   📝  ALPHA-BETA — UPPER SECOND                 │")
@@ -41,7 +58,26 @@ def action_alpha_beta():
     print("  └──────────────────────────────────────────────────┘")
     print(f"{c['reset']}")
 
-    _try_say("Upper second. Adequate, though one expected better from you.")
+    _try_say("Alpha beta. Adequate, though one expected better from you.")
+
+
+def action_betaalpha():
+    """Borderline — not quite good enough."""
+    c = COLORS
+    print(f"{c['betaalpha']}{c['bold']}")
+    print("  ┌──────────────────────────────────────────────────┐")
+    print("  │                                                  │")
+    print("  │   📋  BETA-ALPHA — UPPER SECOND (lower end)     │")
+    print("  │                                                  │")
+    print("  │   Showing promise, but not enough.               │")
+    print("  │   Your tutor sighs audibly.                      │")
+    print("  │                                                  │")
+    print("  │   COMPILATION DENIED.                            │")
+    print("  │                                                  │")
+    print("  └──────────────────────────────────────────────────┘")
+    print(f"{c['reset']}")
+
+    _try_say("Beta alpha. Showing promise, but not enough. Compilation denied.")
 
 
 def action_beta():
@@ -61,6 +97,44 @@ def action_beta():
     print(f"{c['reset']}")
 
     _try_say("Beta. Lower second. This is beneath you. Compilation denied.")
+
+
+def action_betagamma():
+    """Even worse than beta."""
+    c = COLORS
+    print(f"{c['betagamma']}{c['bold']}")
+    print("  ┌──────────────────────────────────────────────────┐")
+    print("  │                                                  │")
+    print("  │   😡  BETA-GAMMA — barely passable              │")
+    print("  │                                                  │")
+    print("  │   Your tutor has given up on the letter          │")
+    print("  │   and is now speaking directly to the Dean.      │")
+    print("  │                                                  │")
+    print("  │   COMPILATION DENIED.                            │")
+    print("  │                                                  │")
+    print("  └──────────────────────────────────────────────────┘")
+    print(f"{c['reset']}")
+
+    _try_say("Beta gamma. Barely passable. Compilation denied.")
+
+
+def action_gammabeta():
+    """Very poor."""
+    c = COLORS
+    print(f"{c['gammabeta']}{c['bold']}")
+    print("  ╔══════════════════════════════════════════════════╗")
+    print("  ║                                                  ║")
+    print("  ║   💀  GAMMA-BETA — approaching disgrace         ║")
+    print("  ║                                                  ║")
+    print("  ║   The Examination Schools are concerned.         ║")
+    print("  ║   Your college is considering rustication.       ║")
+    print("  ║                                                  ║")
+    print("  ║   COMPILATION VIOLENTLY DENIED.                  ║")
+    print("  ║                                                  ║")
+    print("  ╚══════════════════════════════════════════════════╝")
+    print(f"{c['reset']}")
+
+    _try_say("Gamma beta. Approaching disgrace. Compilation violently denied.")
 
 
 def action_gamma():
@@ -99,8 +173,12 @@ def run_grade_action(grade: str):
     """Run the appropriate action for the given grade."""
     actions = {
         "alpha": action_alpha,
-        "alpha-beta": action_alpha_beta,
+        "alpha(-)": action_alpha_minus,
+        "alphabeta": action_alphabeta,
+        "betaalpha": action_betaalpha,
         "beta": action_beta,
+        "betagamma": action_betagamma,
+        "gammabeta": action_gammabeta,
         "gamma": action_gamma,
     }
 

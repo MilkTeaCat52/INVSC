@@ -9,3 +9,55 @@
 2026.02.14 22:42:06 INFO  time: compiled Invcc_d5c0a6989e in 0.54s
 2026.02.14 22:42:07 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
 2026.02.14 22:42:07 INFO  time: indexed workspace in 1.99s
+2026.02.14 23:13:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:13:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:13:42 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:13:42 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:13:42 INFO  time: compiled Invcc_d5c0a6989e in 90ms
+2026.02.14 23:13:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:13:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:13:43 INFO  time: indexed workspace in 1.24s
+2026.02.14 23:13:43 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:14:52 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q2.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:14:52 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q2.scala
+2026.02.14 23:14:52 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q2.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:14:53 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:14:53 INFO  time: compiled Invcc_d5c0a6989e in 33ms
+2026.02.14 23:14:53 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q2.scala
+2026.02.14 23:14:52 INFO  time: indexed workspace in 0.59s
+2026.02.14 23:14:53 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q2.scala
+2026.02.14 23:14:56 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:14:56 INFO  time: compiled Invcc_d5c0a6989e in 0.27s
+2026.02.14 23:16:48 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:16:48 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:16:48 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:16:49 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:16:48 INFO  time: indexed workspace in 0.53s
+2026.02.14 23:16:48 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:16:50 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:16:50 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:16:51 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala
+2026.02.14 23:17:22 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:17:22 INFO  time: compiled Invcc_d5c0a6989e in 0.12s
+2026.02.14 23:17:30 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:17:30 INFO  time: compiled Invcc_d5c0a6989e in 83ms
+2026.02.14 23:17:33 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:17:33 INFO  time: compiled Invcc_d5c0a6989e in 76ms
+2026.02.14 23:18:17 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:18:17 INFO  time: compiled Invcc_d5c0a6989e in 69ms
+2026.02.14 23:18:30 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:18:30 INFO  time: compiled Invcc_d5c0a6989e in 56ms
+2026.02.14 23:18:43 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:18:43 INFO  time: compiled Invcc_d5c0a6989e in 56ms
+2026.02.14 23:18:47 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:18:47 INFO  time: compiled Invcc_d5c0a6989e in 55ms
+2026.02.14 23:19:05 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:19:05 INFO  time: compiled Invcc_d5c0a6989e in 57ms
+2026.02.14 23:19:12 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:19:12 INFO  time: compiled Invcc_d5c0a6989e in 0.13s
+2026.02.14 23:24:07 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:24:07 INFO  time: compiled Invcc_d5c0a6989e in 97ms
+Feb 14, 2026 11:24:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1618
+2026.02.14 23:25:18 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:25:18 INFO  time: compiled Invcc_d5c0a6989e in 0.1s

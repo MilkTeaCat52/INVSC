@@ -1,0 +1,39 @@
+
+  ___  _   _  __     __  ____    ____ 
+ |_ _|| \ | | \ \   / / / ___|  / ___|
+  | | |  \| |  \ \ / /  \___ \ | |    
+  | | | |\  |   \ V /    ___) || |___ 
+ |___||_| \_|    \_/    |____/  \____|
+
+  INVariant Scala Compiler v0.1.0
+  "Your code is only as good as your invariants."
+
+[INVSC] Analysing ./examples/q6.scala...
+[INVSC] Checking loop invariants and variants...
+[INVSC] Consulting the Oxford examiners board...
+
+./examples/q6.scala:9: error: The variant [The actual number we're guessing] * 2 - r is not a valid expression in the current context and does not decrease.
+./examples/q6.scala:9: error: The invariant r = l * 2 is not maintained after the first loop iteration as both l and r are doubled.
+./examples/q6.scala:14: error: The variant r - l is not guaranteed to strictly decrease in every iteration of the second loop.
+
+Tutor's remarks: The code demonstrates a basic understanding of invariants and variants, but there are significant errors in their correctness and application.
+
+────────────────────────────────────────────────────────────
+  😤 Grade: β (Beta) — Lower Second
+  This is beneath you. COMPILATION REFUSED.
+────────────────────────────────────────────────────────────
+
+Compiling ./examples/q6.scala...
+✗ Compilation FAILED. Grade too low.
+  invsc: error: code does not meet minimum invariant standards (need αβ or above)
+
+  ┌──────────────────────────────────────────────────┐
+  │                                                  │
+  │   😤  BETA — LOWER SECOND                       │
+  │                                                  │
+  │   Your tutor is writing a strongly worded        │
+  │   letter to your Director of Studies.            │
+  │                                                  │
+  │   COMPILATION DENIED.                            │
+  │                                                  │
+  └──────────────────────────────────────────────────┘
