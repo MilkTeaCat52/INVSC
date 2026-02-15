@@ -14,7 +14,7 @@ BANNER = r"""
   | | | |\  |   \ V /    ___) || |___ 
  |___||_| \_|    \_/    |____/  \____|
 
-  INVariant Scala Compiler v0.1.0
+  Invariant Scala Compiler v0.1.0
   "Your code is only as good as your invariants."
 """
 

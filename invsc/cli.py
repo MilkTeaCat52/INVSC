@@ -1,5 +1,5 @@
 """
-Main CLI entry point for INVSC — INVariant Scala Compiler.
+Main CLI entry point for INVSC — Invariant Scala Compiler.
 """
 
 import argparse
@@ -19,7 +19,7 @@ from .actions import run_grade_action
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         prog="invsc",
-        description="INVSC — INVariant Scala Compiler. "
+        description="INVSC — Invariant Scala Compiler. "
                     "The Scala compiler that judges your code like an Oxford tutor.",
         epilog="Your code is only as good as your invariants.",
     )
