@@ -1,10 +1,13 @@
-# INVSC — INVariant Scala Compiler
+# INVSC
 
 > *"Your code is only as good as your invariants."*
 
-The Scala compiler that judges your code like an Oxford tutor. INVSC checks that every loop in your Scala code has properly annotated invariants and variants, grades your code using the Oxford scoring system, and **refuses to compile** anything below α-β.
+The **Invariant Scala Compiler** is a “compiler” for the [Scala programming language](https://www.scala-lang.org), designed to be used in the Imperative Programming course in The University of Oxford.
 
-## 🎓 Grading System
+INVSC parses your commented code and judges it like an Oxford tutor, checking that every loop in your Scala code has properly annotated invariants and variants, and determining whether your comments are adequate to prove correctness for your program. INVSC grades your code using the "Oxford scoring system", and **refuses to compile** anything below α-β.
+
+
+## Grading System
 
 | Grade | Meaning | Result |
 |-------|---------|--------|
@@ -13,7 +16,12 @@ The Scala compiler that judges your code like an Oxford tutor. INVSC checks that
 | **β** (Beta) | Lower Second | ❌ Compilation DENIED |
 | **γ** (Gamma) | Third Class | ❌ Compilation VIOLENTLY DENIED |
 
-## 🚀 Installation
+
+## Prerequisites
+* Scala
+* Java JDK
+
+## Installation
 
 ```bash
 # Set your OpenAI API key
@@ -32,7 +40,7 @@ brew install scala
 cs install scala
 ```
 
-## 📖 Usage
+## Usage
 
 ```bash
 # Basic usage — check invariants and compile with scalac
@@ -54,7 +62,7 @@ invsc --no-action Main.scala
 invsc --model gpt-4o-mini Main.scala
 ```
 
-## 📝 What INVSC Checks
+## What INVSC Checks
 
 For every loop in your Scala code, INVSC verifies:
 
@@ -63,14 +71,14 @@ For every loop in your Scala code, INVSC verifies:
 3. **Correctness** — Are the stated invariants actually correct?
 4. **Variant decrease** — Does the variant actually decrease on each iteration?
 
-## 🔊 Grade Actions
+## Grade Actions
 
 - **Alpha**: Triumphant announcement via macOS `say`
 - **Alpha-Beta**: Mild acknowledgement
 - **Beta**: Strongly worded letter to your Director of Studies
 - **Gamma**: Threatens to delete your code (doesn't actually)
 
-## 💡 Example
+## Example
 
 ```scala
 object Sum {
@@ -90,4 +98,4 @@ object Sum {
 
 ## License
 
-MIT — but your tutor's disappointment is forever.
+MIT
