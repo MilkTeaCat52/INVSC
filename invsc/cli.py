@@ -10,8 +10,11 @@ from .config import COLORS, PASSING_GRADES
 from .gpt_client import query_gpt, GPTError
 from .formatter import format_full_output, print_banner, print_phase
 from .compiler import real_compile
+from .compiler import real_run
 from .actions import run_grade_action
 
+
+# let the user specify the compiler and the output dir
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -31,6 +34,23 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default=None,
         help="OpenAI API key (or set OPENAI_API_KEY env var)",
+    )
+    parser.add_argument(
+        "--no-key",
+        action="store_true",
+        help="Skips everything related to ChatGPT for debugging purposes",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Output directory (default: parent directory of source file)",
+    )
+    parser.add_argument(
+        "--compiler",
+        type=str,
+        default="fsc",
+        help="Scala Compiler to use for compilation (default: fsc)",
     )
     parser.add_argument(
         "--model",
@@ -62,6 +82,11 @@ def parse_args() -> argparse.Namespace:
         "--verbose",
         action="store_true",
         help="Show GPT's detailed analysis (chain-of-thought reasoning)",
+    )
+    parser.add_argument(
+        "--args",
+        nargs=argparse.REMAINDER,
+        help="Arguments passed through"
     )
 
     return parser.parse_args()
@@ -97,6 +122,24 @@ def main():
         print(f"{c['error']}invsc: error: '{args.source}' is empty{c['reset']}", file=sys.stderr)
         sys.exit(1)
 
+    
+    if args.no_key:
+        print(f"{c['warning']}invsc: Skipping evaluation by ChatGPT. This flag is intended for debugging.{c['reset']}")
+
+        print()
+
+        exit_code = 0
+
+        if args.compiler == "scala":
+            compile_exit = real_run(source_path, extra_args = args.args)
+        else:
+            compile_exit = real_compile(source_path, out_dir = args.output, compiler = args.compiler)
+        if compile_exit != 0:
+            exit_code = compile_exit
+    
+        sys.exit(exit_code)
+
+
     # Query GPT
     try:
         result = query_gpt(source_code, api_key=args.api_key, model=args.model)
@@ -106,6 +149,8 @@ def main():
     except Exception as e:
         print(f"{c['error']}invsc: internal error: {e}{c['reset']}", file=sys.stderr)
         sys.exit(1)
+
+    
 
     # Output results
     if args.json:
@@ -142,9 +187,13 @@ def main():
 
     if should_compile and not args.no_compile:
         print()
-        compile_exit = real_compile(source_path)
+        if args.compiler == "scala":
+            compile_exit = real_run(source_path, extra_args = args.args)
+        else:
+            compile_exit = real_compile(source_path, out_dir = args.output, compiler = args.compiler)
         if compile_exit != 0:
             exit_code = compile_exit
+    
 
     sys.exit(exit_code)
 
