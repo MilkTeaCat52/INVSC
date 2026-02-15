@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invsc"
+version = "0.1.0"
+description = "INVSC — INVariant Scala Compiler. The Scala compiler that judges your code like an Oxford tutor."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "INVSC Team"},
+]
+
+dependencies = [
+    "openai>=1.0.0",
+]
+
+[project.scripts]
+invsc = "invsc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["invsc*"]
+
+[tool.setuptools.package-data]
+invsc = ["prompt.txt"]
