@@ -24,7 +24,7 @@ The student in question submitted the following file for compilation:
 
     {filename}
 
-Upon rigorous inspection by the INVariant Scala Compiler (INVSC), the code was awarded \
+Upon rigorous inspection by the Invariant Scala Compiler (INVSC), the code was awarded \
 a grade of {grade}, which falls well below the minimum standard expected of any \
 self-respecting member of this university.
 
@@ -35,7 +35,7 @@ The compiler's remarks were as follows:
 The Examination Schools have been notified. I trust you will take appropriate action.
 
 Yours in disappointment,
-The INVariant Scala Compiler
+The Invariant Scala Compiler
 """
 
 

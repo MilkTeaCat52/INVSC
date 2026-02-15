@@ -6,6 +6,13 @@ The **Invariant Scala Compiler** is a “compiler” for the [Scala programming 
 
 INVSC parses your commented code and judges it like an Oxford tutor, checking that every loop in your Scala code has properly annotated invariants and variants, and determining whether your comments are adequate to prove correctness for your program. INVSC grades your code using the "Oxford scoring system", and **refuses to compile** anything below α-β.
 
+## Disclaimer
+This project was created as a submission for a Hackathon hosted by the [Oxford Computing and Technology Society](https://ox.compsoc.net). The theme of the Hackathon was "Convoluted".
+
+In order to evaluate your code and comments, we send your code to ChatGPT using a provided OpenAI access token. By using this software， you acknowledge that your code will be trasmitted to OpenAI's servers for processing and may be used for training future LLM models in accordance OpenAI's Terms and Conditions. You further acknowledge that we accept no responsibility for how OpenAI processes, stores, or uses your data.
+
+Before using this software, make sure that you have set usage limits for your OpenAI access token and have reviewed and validated the contents of gpt_client.py. We do not guarantee or assume responsibility for token usage and accept no liability for any costs or expenses incurred.
+
 
 ## Grading System
 

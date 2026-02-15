@@ -1,5 +1,5 @@
 """
-INVSC - INVariant Scala Compiler
+INVSC - Invariant Scala Compiler
 The Scala compiler that judges your code like an Oxford tutor.
 """
 
