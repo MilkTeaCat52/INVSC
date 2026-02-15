@@ -6,6 +6,8 @@ The **Invariant Scala Compiler** is a “compiler” for the [Scala programming 
 
 INVSC parses your commented code and judges it like an Oxford tutor, checking that every loop in your Scala code has properly annotated invariants and variants, and determining whether your comments are adequate to prove correctness for your program. INVSC grades your code using the "Oxford scoring system", and **refuses to compile** anything below α-β.
 
+## Disclaimer
+This project was created as a submission for a Hackathon hosted by the [Oxford Computing and Technology Society](https://ox.compsoc.net). The theme of the Hackathon was "Convoluted".
 
 ## Grading System
 
