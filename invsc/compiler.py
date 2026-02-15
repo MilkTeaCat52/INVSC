@@ -70,7 +70,9 @@ def real_compile(source_path: Path, out_dir:Path | None = None , compiler:str | 
         # Create output directory if it doesn't exist
         out_dir.mkdir(parents=True, exist_ok=True)
 
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120, shell=True)
+        windows = os.name == "nt"
+
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120, shell=windows)
         if result.stdout:
             print(result.stdout)
         if result.stderr:
@@ -120,7 +122,9 @@ def real_run(source_path: Path, extra_args: list[str] | None = None) -> int:
     print(f"{c['info']}[INVSC] Compiling: {' '.join(cmd)}{c['reset']}")
 
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120, shell=True)
+        windows = os.name == "nt"
+
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120, shell = windows)
         if result.stdout:
             print(result.stdout)
         if result.stderr:
