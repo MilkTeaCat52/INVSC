@@ -61,3 +61,125 @@ Feb 14, 2026 11:24:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 1618
 2026.02.14 23:25:18 INFO  compiling invcc_d5c0a6989e (1 scala source)
 2026.02.14 23:25:18 INFO  time: compiled Invcc_d5c0a6989e in 0.1s
+2026.02.14 23:50:43 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q9.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:50:43 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q9.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.14 23:50:43 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q9.scala
+2026.02.14 23:50:44 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:50:44 INFO  time: compiled Invcc_d5c0a6989e in 31ms
+2026.02.14 23:50:44 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q9.scala
+2026.02.14 23:50:43 INFO  time: indexed workspace in 0.56s
+2026.02.14 23:50:44 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q9.scala
+2026.02.14 23:50:45 INFO  compiling invcc_d5c0a6989e (1 scala source)
+2026.02.14 23:50:45 INFO  time: compiled Invcc_d5c0a6989e in 0.11s
+2026.02.15 00:15:25 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:25 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:25 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala
+2026.02.15 00:15:25 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala
+2026.02.15 00:15:25 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:28 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:30 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:31 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:31 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:31 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala
+2026.02.15 00:15:31 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:40 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:42 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:43 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:43 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:45 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:45 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:52 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:52 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:54 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:54 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:55 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:55 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:57 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:15:59 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:00 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:02 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:02 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:24 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:24 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:24 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:26 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:27 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:27 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:16:29 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:05 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:05 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:06 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:06 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:07 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:07 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:09 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:10 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:11 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:12 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:12 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:18 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:22 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala
+2026.02.15 00:17:22 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:17:50 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 00:18:00 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15

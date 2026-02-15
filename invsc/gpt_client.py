@@ -32,30 +32,85 @@ def build_prompt(source_code: str) -> str:
     return template + source_code
 
 
-ANALYSIS_SYSTEM = (
-    "You are INVSC, the INVariant Scala Compiler — an expert in formal "
-    "verification and Hoare logic. You must carefully and accurately analyse "
-    "Scala code. Do NOT rush to judgement. Trace through the code mentally "
-    "step by step."
-)
+ANALYSIS_SYSTEM = """\
+You are INVSC, the INVariant Scala Compiler — a world-class expert in formal \
+verification, Hoare logic, and program correctness proofs.
+
+You are extremely rigorous and skeptical. You assume every invariant is WRONG \
+until you have personally verified it with a formal argument AND concrete \
+counterexample search. You are known for catching subtle bugs that others miss.
+
+Key principles:
+- Integer division truncates toward zero. floor(a/b) != a/b in general.
+- Mathematical functions like log may be undefined for certain inputs (e.g. log(0)).
+- An invariant that holds for "nice" inputs but fails for edge cases is INCORRECT.
+- A variant must strictly decrease on EVERY iteration, not just most.
+- Comments placed after a loop do NOT count as that loop's invariant/variant annotation.
+- Invariants/variants should be annotated BEFORE or INSIDE the loop they refer to.
+"""
 
 ANALYSIS_PROMPT = """\
-I need you to carefully analyse the following Scala program's loop invariants and variants.
+Carefully analyse the following Scala program's loop invariants and variants.
 
-For EACH loop in the program, do the following step-by-step:
-1. Identify the loop and what it computes.
-2. Trace through 2-3 iterations with concrete values to understand the behavior.
-3. Read the annotated invariant. Check: is it true before the loop starts? \
-Is it maintained by each iteration? Is it true when the loop exits?
-4. Read the annotated variant. Check: is it a non-negative integer expression? \
-Does it strictly decrease on every iteration? Does reaching 0 (or below) imply termination?
-5. Conclude whether each invariant and variant is CORRECT or INCORRECT, with justification.
+You MUST follow this EXACT verification methodology for EACH loop:
 
-Be precise. Do not hallucinate issues. If an invariant uses informal notation \
-(e.g. "[The actual number we're guessing]" to refer to an unknown value), \
-interpret it charitably — it may be referring to a value that exists at runtime \
-but isn't directly named in scope. Variants that depend on external unknowns \
-are acceptable as long as they decrease.
+## STEP 1: CODE UNDERSTANDING
+- What does the loop compute?
+- What are ALL the variables modified in the loop?
+- What is the loop guard (condition)?
+
+## STEP 2: IDENTIFY ANNOTATIONS
+- Which comments are the invariant(s) for this loop?
+- Which comment is the variant for this loop?
+- Are they placed correctly (before/inside the loop, NOT after it)?
+- If the variant or invariant appears AFTER the while loop, flag this as a \
+structural problem — it is NOT a valid annotation for that loop.
+
+## STEP 3: COUNTEREXAMPLE SEARCH (CRITICAL)
+You MUST trace through the code with ALL of the following categories of inputs. \
+Do not skip any:
+
+a) **Minimal / zero inputs**: x=0, x=1
+b) **Small inputs that cause integer division edge cases**: x=2, x=3, x=4, x=5
+c) **Inputs where nx/divisor truncates**: find values where integer division \
+   loses information (e.g., 2/3=0, 5/3=1, 7/3=2). These are where bugs hide.
+d) **"Nice" inputs** (e.g., exact powers): x=9, x=27
+e) **Negative inputs** if no precondition prevents them
+
+For each input, trace the COMPLETE execution:
+- Write out every value of every variable at every iteration
+- Check: does the invariant hold at each step? Write the concrete LHS and RHS.
+- Check: does the variant decrease? By how much?
+- Check: does the function return the correct answer?
+
+## STEP 4: INVARIANT VERIFICATION
+For the invariant to be CORRECT, ALL of the following must hold:
+a) **Initialisation**: Is it true before the first iteration? Check with concrete values.
+b) **Maintenance**: If it's true at the start of an iteration AND the loop guard is true, \
+   is it still true after the loop body executes? Check with concrete values, \
+   especially edge cases from Step 3.
+c) **Termination use**: When the loop exits (guard is false + invariant), does this give \
+   us the desired postcondition?
+d) **Domain validity**: Are all mathematical expressions in the invariant well-defined? \
+   (e.g., log(0) is undefined, division by zero, etc.)
+
+## STEP 5: VARIANT VERIFICATION
+For the variant to be CORRECT, ALL of the following must hold:
+a) It is a non-negative integer expression (when the loop guard is true)
+b) It strictly decreases on EVERY iteration (not just some)
+c) If it reaches 0, the loop guard must be false
+
+## STEP 6: POST-LOOP REASONING VERIFICATION
+Check any comments after the loop that argue about the postcondition:
+- Are the mathematical claims correct?
+- Do they follow from the invariant + negation of the loop guard?
+- Are there any undefined expressions (e.g., log(0), division by 0)?
+
+## STEP 7: FINAL VERDICT
+State clearly for each invariant and variant: CORRECT or INCORRECT, with evidence.
+
+If you found even ONE concrete input where the invariant breaks, it is INCORRECT.
+If the function returns a wrong answer for even ONE valid input, note this.
 
 Here is the program:
 
@@ -63,7 +118,8 @@ Here is the program:
 {source_code}
 ```
 
-Provide your detailed step-by-step analysis. Do NOT output JSON yet.
+Provide your detailed step-by-step analysis following the methodology above. \
+Do NOT output JSON yet. Be thorough — your reputation depends on it.
 """
 
 JUDGEMENT_SYSTEM = (
@@ -75,18 +131,50 @@ JUDGEMENT_SYSTEM = (
 JUDGEMENT_PROMPT = """\
 Based on your analysis above, now produce the final verdict.
 
-Use the following grading scale (Oxford system):
-- alpha: Flawless. All loops have correct invariants and variants.
-- alpha(-): Near-flawless, only trivial nitpicks (e.g. informal notation).
-- alphabeta: Good but with minor issues in one or two annotations.
-- betaalpha: Decent, but some invariants/variants have notable problems.
-- beta: Significant missing or incorrect annotations.
-- betagamma: Poor effort, many missing annotations.
-- gammabeta: Very poor, barely any correct annotations.
-- gamma: No effort on invariants/variants whatsoever. Disgraceful.
+CRITICAL RULES for grading:
+1. If your analysis found a concrete counterexample where an invariant fails, \
+the invariant is INCORRECT. This must be reflected in the grade.
+2. If the function returns a wrong answer for a valid input, this is a serious error.
+3. Do NOT give alpha if you found any correctness issue.
+4. You MUST be consistent with your analysis — do not contradict your own findings.
 
-IMPORTANT: If your analysis concluded the invariants and variants are correct, \
-you MUST grade alpha or alpha(-). Do NOT contradict your own analysis.
+GRADING CALIBRATION — use the following scale. Read the descriptions and examples \
+carefully to calibrate your grading:
+
+- **alpha**: Flawless. All loops have correct, well-placed invariants and variants. \
+  No issues whatsoever.
+
+- **alpha(-)**: All annotations are present and substantively correct. \
+  Only trivial nitpicks remain, such as informal notation for a variant \
+  (e.g. "[the value we're guessing]"), slightly imprecise wording, \
+  or a minor stylistic issue. The reasoning is sound.
+
+- **alphabeta**: Annotations are present and mostly correct. One annotation has \
+  a minor issue (e.g. slightly unclear wording, a variant placed just after \
+  the loop instead of before it, or one invariant that's correct but incomplete).
+
+- **betaalpha**: A decent attempt. Most annotations are present but one has a \
+  notable correctness problem, or one loop is missing annotations entirely \
+  while others are well-annotated.
+
+- **beta**: The code is correct and sensible, but annotations are largely missing \
+  or several have correctness issues. Some effort was made.
+
+- **betagamma**: The code is correct/sensible but has NO invariant or variant \
+  annotations at all, OR annotations are present but mostly wrong. \
+  This is the grade for "good code, no annotations".
+
+- **gammabeta**: The code has significant problems (logic issues, wrong results) \
+  AND annotations are missing or wrong.
+
+- **gamma**: The code is nonsensical, completely broken, or an utter mess. \
+  Reserved for code that shows no understanding of the problem whatsoever. \
+  Do NOT give gamma merely for missing annotations if the code itself is correct.
+
+KEY CALIBRATION POINTS:
+- Missing annotations on correct code = beta or betagamma, NOT gamma.
+- One informal/unclear variant on otherwise correct annotations = alpha(-) or alphabeta.
+- Gamma is ONLY for code that is fundamentally broken or nonsensical.
 
 Respond in this JSON format ONLY:
 {
