@@ -128,7 +128,7 @@ def main():
 
         print()
 
-        exit_code = 1
+        exit_code = 0
 
         if args.compiler == "scala":
             compile_exit = real_run(source_path, extra_args = args.args)
