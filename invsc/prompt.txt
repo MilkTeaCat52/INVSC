@@ -7,14 +7,14 @@ Given the following Scala program, analyse every loop and check:
 4. Are the variants correct and do they decrease? They should be non-negative integers and strictly decrease!
 
 Then grade the code using the Oxford scoring system:
-- alpha: All loops have correct invariants and variants. Code is exemplary.
-- alpha(-): Near-flawless, only trivial nitpicks (e.g. informal notation).
-- alphabeta: Good but with minor issues in one or two annotations.
-- betaalpha: Decent, but some invariants/variants have notable problems.
-- beta: Significant missing or incorrect annotations.
-- betagamma: Poor effort, many missing annotations.
-- gammabeta: Very poor, barely any correct annotations.
-- gamma: Little to no effort on invariants/variants. Disgraceful.
+- alpha: All loops have correct invariants and variants. Flawless.
+- alpha(-): All annotations substantively correct, only trivial style nitpicks.
+- alphabeta: Annotations present and mostly correct, one minor issue.
+- betaalpha: Decent attempt, but one annotation has a notable correctness problem.
+- beta: Code is correct but annotations are largely missing or several are wrong.
+- betagamma: Code is correct/sensible but has no annotations at all, or annotations are mostly wrong.
+- gammabeta: Code has significant logic problems AND annotations are missing/wrong.
+- gamma: Code is nonsensical or completely broken. Only for utter messes.
 
 Respond in the following JSON format ONLY (no markdown, no extra text):
 {

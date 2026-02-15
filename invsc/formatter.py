@@ -41,7 +41,7 @@ GRADE_MESSAGES = {
     ],
     "betagamma": [
         "😡 Grade: βγ (Beta-Gamma) — Lower Second (barely)",
-        "Your tutor is composing a strongly worded letter. COMPILATION REFUSED.",
+        "The compiler is composing a strongly worded letter. COMPILATION REFUSED.",
     ],
     "gammabeta": [
         "💀 Grade: γβ (Gamma-Beta) — Third Class (upper end)",
@@ -87,11 +87,11 @@ def print_warnings(warnings: list[dict], filename: str):
 
 
 def print_summary(summary: str):
-    """Print the tutor's summary."""
+    """Print the compiler's summary."""
     c = COLORS
     if summary:
         print()
-        print(f"{c['bold']}Tutor's remarks:{c['reset']} {summary}")
+        print(f"{c['bold']}Compiler's remarks:{c['reset']} {summary}")
 
 
 def print_grade(grade: str):
