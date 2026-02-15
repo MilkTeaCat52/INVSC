@@ -13,7 +13,7 @@ from .config import COLORS
 
 
 # Email template for gammabeta / gamma shaming
-SHAME_EMAIL_RECIPIENT = "gavinlowe2@gmail.com"
+SHAME_EMAIL_RECIPIENT = ""
 SHAME_EMAIL_SUBJECT = "INVSC Formal Complaint — Inadequate Loop Invariants"
 SHAME_EMAIL_BODY = """\
 Dear Gavin,
