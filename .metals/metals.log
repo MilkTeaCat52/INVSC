@@ -183,3 +183,44 @@ WARNING: Unmatched cancel notification for request id 1618
 2026.02.15 00:17:22 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
 2026.02.15 00:17:50 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
 2026.02.15 00:18:00 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:03:44 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:04 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:04 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:04 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:12 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q10.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:17 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/MaxSegSum.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:17 WARN  no build target for: /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/MaxSegSum.scala
+2026.02.15 01:05:17 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/MaxSegSum.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:05:17 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:05:17 WARN  Could not find semantic tokens for: file:///Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/MaxSegSum.scala
+2026.02.15 01:05:17 INFO  time: compiled Invcc_d5c0a6989e in 0.39s
+2026.02.15 01:05:17 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:05:17 INFO  Deduplicating compilation of Invcc_d5c0a6989e from bsp client 'scala-cli 1.10.1' (since 2h 23m 12.134s)
+2026.02.15 01:05:17 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:05:17 INFO  time: compiled Invcc_d5c0a6989e in 0.19s
+2026.02.15 01:05:18 INFO  time: indexed workspace in 0.85s
+2026.02.15 01:05:17 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:05:18 INFO  time: compiled Invcc_d5c0a6989e in 0.17s
+2026.02.15 01:44:05 INFO  Shutting down server
+2026.02.15 01:44:05 INFO  Memory monitor stopped
+2026.02.15 01:44:05 INFO  shutting down Metals
+2026.02.15 01:44:05 INFO  Shut down connection with build server.
+2026.02.15 01:44:05 INFO  Exiting server
+2026.02.15 01:44:17 INFO  Started: Metals version 1.6.5 in folders '/Users/zhanqiwang/Documents/code/Hackathon/Invcc' for client Visual Studio Code 1.104.2.
+2026.02.15 01:44:17 INFO  Memory monitor started
+2026.02.15 01:44:17 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.15 01:44:17 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.02.15 01:44:17 INFO  no build target found for /Users/zhanqiwang/Documents/code/Hackathon/Invcc/examples/q6.scala. Using presentation compiler with project's scala-library version: 2.13.15
+2026.02.15 01:44:17 INFO  Attempting to connect to the build server...
+2026.02.15 01:44:17 INFO  Running BSP server List(/Users/zhanqiwang/Library/Application Support/Coursier/bin/.scala-cli.aux, bsp, --json-options, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-options-v2.json, --json-launcher-options, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-launcher-options.json, --envs-file, /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.scala-build/ide-envs.json, /Users/zhanqiwang/Documents/code/Hackathon/Invcc)
+2026.02.15 01:44:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/zhanqiwang/Documents/code/Hackathon/Invcc/.metals/bsp.trace.json or /Users/zhanqiwang/Library/Caches/org.scalameta.metals/bsp.trace.json
+2026.02.15 01:44:19 INFO  time: Connected to build server in 1.2s
+2026.02.15 01:44:19 INFO  Connected to Build server: scala-cli v1.10.1
+2026.02.15 01:44:19 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:44:19 INFO  time: compiled Invcc_d5c0a6989e in 0.17s
+2026.02.15 01:44:19 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:44:19 INFO  time: compiled Invcc_d5c0a6989e in 0.13s
+2026.02.15 01:44:20 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.02.15 01:44:20 INFO  time: indexed workspace in 1.27s
+2026.02.15 01:44:20 INFO  compiling invcc_d5c0a6989e (2 scala sources)
+2026.02.15 01:44:20 INFO  time: compiled Invcc_d5c0a6989e in 0.12s

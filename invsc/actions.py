@@ -6,8 +6,37 @@ import subprocess
 import sys
 import time
 import random
+import webbrowser
+from urllib.parse import quote
 
 from .config import COLORS
+
+
+# Email template for gammabeta / gamma shaming
+SHAME_EMAIL_RECIPIENT = "gavinlowe2@gmail.com"
+SHAME_EMAIL_SUBJECT = "INVSC Formal Complaint — Inadequate Loop Invariants"
+SHAME_EMAIL_BODY = """\
+Dear Gavin,
+
+I am writing to formally bring to your attention a matter of grave academic concern.
+
+The student in question submitted the following file for compilation:
+
+    {filename}
+
+Upon rigorous inspection by the INVariant Scala Compiler (INVSC), the code was awarded \
+a grade of {grade}, which falls well below the minimum standard expected of any \
+self-respecting member of this university.
+
+The compiler's remarks were as follows:
+
+    "{summary}"
+
+The Examination Schools have been notified. I trust you will take appropriate action.
+
+Yours in disappointment,
+The INVariant Scala Compiler
+"""
 
 
 def action_alpha():
@@ -52,7 +81,7 @@ def action_alphabeta():
     print("  │                                                  │")
     print("  │   📝  ALPHA-BETA — UPPER SECOND                 │")
     print("  │                                                  │")
-    print("  │   Adequate. Your tutor expected more,            │")
+    print("  │   Adequate. The compiler expected more,          │")
     print("  │   but will not send a stern letter.              │")
     print("  │                                                  │")
     print("  └──────────────────────────────────────────────────┘")
@@ -70,7 +99,7 @@ def action_betaalpha():
     print("  │   📋  BETA-ALPHA — UPPER SECOND (lower end)     │")
     print("  │                                                  │")
     print("  │   Showing promise, but not enough.               │")
-    print("  │   Your tutor sighs audibly.                      │")
+    print("  │   The compiler sighs audibly.                    │")
     print("  │                                                  │")
     print("  │   COMPILATION DENIED.                            │")
     print("  │                                                  │")
@@ -88,7 +117,7 @@ def action_beta():
     print("  │                                                  │")
     print("  │   😤  BETA — LOWER SECOND                       │")
     print("  │                                                  │")
-    print("  │   Your tutor is writing a strongly worded        │")
+    print("  │   The compiler is writing a strongly worded      │")
     print("  │   letter to your Director of Studies.            │")
     print("  │                                                  │")
     print("  │   COMPILATION DENIED.                            │")
@@ -107,7 +136,7 @@ def action_betagamma():
     print("  │                                                  │")
     print("  │   😡  BETA-GAMMA — barely passable              │")
     print("  │                                                  │")
-    print("  │   Your tutor has given up on the letter          │")
+    print("  │   The compiler has given up on the letter        │")
     print("  │   and is now speaking directly to the Dean.      │")
     print("  │                                                  │")
     print("  │   COMPILATION DENIED.                            │")
@@ -118,7 +147,7 @@ def action_betagamma():
     _try_say("Beta gamma. Barely passable. Compilation denied.")
 
 
-def action_gammabeta():
+def action_gammabeta(filename: str = "", summary: str = ""):
     """Very poor."""
     c = COLORS
     print(f"{c['gammabeta']}{c['bold']}")
@@ -135,9 +164,10 @@ def action_gammabeta():
     print(f"{c['reset']}")
 
     _try_say("Gamma beta. Approaching disgrace. Compilation violently denied.")
+    _open_shame_email("gammabeta", filename, summary)
 
 
-def action_gamma():
+def action_gamma(filename: str = "", summary: str = ""):
     """Maximum shame for gamma."""
     c = COLORS
     print(f"{c['gamma']}{c['bold']}")
@@ -167,9 +197,10 @@ def action_gamma():
         "Gamma. Third class. The Examination Schools are appalled. "
         "Your college has been notified. Compilation violently denied."
     )
+    _open_shame_email("gamma", filename, summary)
 
 
-def run_grade_action(grade: str):
+def run_grade_action(grade: str, filename: str = "", summary: str = ""):
     """Run the appropriate action for the given grade."""
     actions = {
         "alpha": action_alpha,
@@ -184,7 +215,28 @@ def run_grade_action(grade: str):
 
     action = actions.get(grade)
     if action:
-        action()
+        if grade in ("gammabeta", "gamma"):
+            action(filename=filename, summary=summary)
+        else:
+            action()
+
+
+def _open_shame_email(grade: str, filename: str, summary: str):
+    """Open the default mail client with a pre-filled shame email."""
+    body = SHAME_EMAIL_BODY.format(
+        filename=filename or "<unknown>",
+        grade=grade,
+        summary=summary or "No further comment.",
+    )
+    mailto_url = (
+        f"mailto:{quote(SHAME_EMAIL_RECIPIENT)}"
+        f"?subject={quote(SHAME_EMAIL_SUBJECT)}"
+        f"&body={quote(body)}"
+    )
+    try:
+        webbrowser.open(mailto_url)
+    except Exception:
+        pass  # Silently fail if no mail client available
 
 
 def _try_say(text: str):

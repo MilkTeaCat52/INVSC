@@ -126,7 +126,11 @@ def main():
 
     # Grade actions
     if not args.no_action:
-        run_grade_action(result["grade"])
+        run_grade_action(
+            result["grade"],
+            filename=args.source,
+            summary=result.get("summary", ""),
+        )
 
     # Actual Scala compilation
     grade = result["grade"]
@@ -134,7 +138,7 @@ def main():
 
     if args.force and grade not in PASSING_GRADES:
         print(f"\n{c['warning']}invsc: warning: --force flag used. "
-              f"Compiling despite shameful grade. Your tutor will hear about this.{c['reset']}")
+              f"Compiling despite shameful grade. The compiler will remember this.{c['reset']}")
 
     if should_compile and not args.no_compile:
         print()
