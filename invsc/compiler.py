@@ -52,7 +52,7 @@ def real_compile(source_path: Path, out_dir:Path | None = None , compiler:str | 
         return 0
 
     if out_dir is None:
-        print(f"{c['info']}[INVSC] Output directory not specified. Defaluting to parent of source file.{c['reset']}")
+        print(f"{c['info']}[INVSC] Output directory not specified. Defaulting to parent of source file.{c['reset']}")
         out_dir = source_path.parent
 
     # Build command
@@ -77,9 +77,9 @@ def real_compile(source_path: Path, out_dir:Path | None = None , compiler:str | 
             print(result.stderr, file=sys.stderr)
 
         if result.returncode == 0:
-            print(f"{c['alpha']}[INVSC] scalac finished successfully.{c['reset']}")
+            print(f"{c['alpha']}[INVSC] {compiler} finished successfully.{c['reset']}")
         else:
-            print(f"{c['error']}[INVSC] scalac exited with code {result.returncode}.{c['reset']}")
+            print(f"{c['error']}[INVSC] {compiler} exited with code {result.returncode}.{c['reset']}")
 
         return result.returncode
     except subprocess.TimeoutExpired:
@@ -127,9 +127,9 @@ def real_run(source_path: Path, extra_args: list[str] | None = None) -> int:
             print(result.stderr, file=sys.stderr)
 
         if result.returncode == 0:
-            print(f"{c['alpha']}[INVSC] scalac finished successfully.{c['reset']}")
+            print(f"{c['alpha']}[INVSC] scala finished successfully.{c['reset']}")
         else:
-            print(f"{c['error']}[INVSC] scalac exited with code {result.returncode}.{c['reset']}")
+            print(f"{c['error']}[INVSC] scala exited with code {result.returncode}.{c['reset']}")
 
         return result.returncode
     except subprocess.TimeoutExpired:

@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--no-key",
         action="store_true",
-        help="OpenAI API key (or set OPENAI_API_KEY env var)",
+        help="Skips everything related to ChatGPT for debugging purposes",
     )
     parser.add_argument(
         "--output",
